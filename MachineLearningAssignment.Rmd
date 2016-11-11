@@ -2,7 +2,7 @@
 title: "Machine Learning Peer-graded Assignment"
 author: "A Steenekamp"
 date: "10 November 2016"
-output: html_document
+output: pdf_document
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -125,7 +125,7 @@ confusionMatrix(predgbm,testing$classe)$overall[1]
 ```
 # Predict the test cases
 The accuracy rate for the three methods are:
-1) Decision Tree 54%, 51% expected out of error rate
+1) Decision Tree 54%, 46% expected out of error rate
 2) Random Forest 99%, 1% expected out of error rate
 3) Boosting 96%, 4% expected out of error rate
 The most accurate method is **Random Forest** and this will be used to predict the test cases
